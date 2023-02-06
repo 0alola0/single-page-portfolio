@@ -1,0 +1,389 @@
+*{
+    font-family: 'Plus Jakarta Sans';
+}
+:root{
+    --box-margin: 25px;
+    --box-big-width: 354px;
+    --box-small-width: 164px;
+    --box-small-height: 182px;
+    --box-wide-height: 158px;
+    --outer-padding: 11%;
+}
+body,html{
+    background-color: #FFF7F0;
+    margin: 0;
+    padding: 0;
+}
+.header{
+    display: flex;
+    padding-inline: var(--outer-padding);
+    padding-block: 34px;
+    justify-content: space-between;
+}
+.logo{
+    width: 64px;
+}
+.cta{
+    width: 228px;
+    height: 56px;
+    border-radius: 28px;
+    color: #FFF7F0;
+    font-size: 16px;
+    line-height: 28px;
+    border: none;
+}
+.dark-cta{
+    background: #030303;
+}
+.light-cta{
+    background: #EB7565;
+}
+.landing{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-inline: var(--outer-padding);
+}
+.contact{
+    display: flex;
+    margin-top: 88px;
+    border-radius: 10px;
+    padding-inline: var(--outer-padding);
+    color: white;
+    margin-bottom: 22px;
+}
+.contact-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #030303;
+    border-radius: 10px;
+    padding-right: 40px;
+    height: 320px;
+}
+.about{
+    margin-top: 136px;
+    display: flex;
+    align-items: center;
+    padding-inline: var(--outer-padding);
+    justify-content: space-between;
+}
+.carousel{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+.landing-p{
+    font-size: 18px;
+    line-height: 28px;
+    color: #7A746E;
+    margin-top: 0;
+}
+h1{
+    font-size: 56px;
+    line-height: 71px;
+    text-align: center;
+    color: #030303;
+    margin-bottom: 23px;
+}
+.services{
+    display: flex;
+    width: 100%;
+    margin-top: 80px;
+    justify-content:space-between;
+    width: 1115px;
+
+}
+.graphic-design{
+    width: var(--box-big-width);
+    height: 363px;
+    background-color: #755CDE;
+    background-image: url("./assets/pattern-graphic-design.svg");
+}
+.middle-boxes{
+    display: flex;
+    flex-direction: column;
+}
+.middle-up{
+    display: flex;
+}
+.ui-box{
+    width: var(--box-small-width);
+    height: var(--box-small-height);
+    margin-right: var(--box-margin);
+    background-color: #F6A560;
+    background-image: url("./assets/pattern-ui-ux.svg");
+}
+.apps-box{
+    width: var(--box-small-width);
+    height: var(--box-small-height);
+    background-color: #F39E9E;
+    background-image: url("./assets/pattern-apps.svg");
+}
+.middle-down{
+    margin-top: var(--box-margin);
+    width: var(--box-big-width);
+    height: var(--box-wide-height);
+    background-color: #EB7565;
+    background-image: url("./assets/pattern-illustrations.svg");
+}
+.last-boxes{
+    display: flex;
+    flex-direction: column;
+
+}
+.photography-box{
+    width: var(--box-big-width);
+    height: var(--box-small-height);
+    background-color: #61C4B7;
+    background-image: url("./assets/pattern-photography.svg");
+}
+.motion-box{
+    width: var(--box-big-width);
+    height: var(--box-wide-height);
+    margin-top: var(--box-margin);
+    background-color: #552049;
+    background-image: url("./assets/pattern-motion-graphics.svg");
+}
+.box{
+    display: flex;
+    align-items: flex-end;
+    text-indent: 24px;
+    font-size: 24px;
+    line-height: 30px;
+    color: #FFFFFF;
+    border-radius: 8px;
+    background-position-x: 90%;
+    background-position-y: 10%;
+    background-repeat: no-repeat;
+}
+
+.amys-image{
+    width: 445px;
+    height: auto;
+}
+.about-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 540px;
+}
+.about-header{
+    font-size: 40px;
+    line-height: 50px;
+    color: #030303;
+}
+.images-container{
+    --slider-index: 0;
+    display: flex;
+    margin-block: 30px;
+    transform: translateX(calc(var(--slider-index)*-100%)); 
+    transition: transform 0.4s ease-out;   
+}
+.carousel-tex{
+    font-size: 32px;
+}
+.images-container > img{
+    padding: 15px;
+}
+.slider-indicator{
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background-color: #030303;
+    transition: background-color 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-inline: 8px;
+}
+.slider-indicator:hover{
+    background-color: #755CDE;
+}
+.indicator-img{
+    width: 14px;
+    height: 14px;
+}
+.slider-indicator-container{
+    display: flex;
+}
+.contact-text{
+    width: 50%;
+}
+.light-header{
+    font-size: 40px;
+    line-height: 50px;
+}
+.light-text{
+    font-size: 18px;
+    line-height: 28px;
+}
+
+@media only screen and (max-width: 1220px) {
+    :root{
+        --box-margin: 24px;
+        --box-big-width: 333px;
+        --box-small-width: 155px;
+        --box-small-height: 182px;
+        --box-wide-height: 158px;
+        --outer-padding: 11%;
+    }
+    h1{
+        font-size: 44px;
+        line-height: 55px;
+    }
+    .services{
+        flex-wrap: wrap;
+        max-width: 690px;
+    }
+    .last-boxes{
+        flex-direction: row;
+    }
+    .motion-box{
+        height: var(--box-small-height);
+    }
+    .photography-box{
+        margin-top: var(--box-margin);
+        margin-right: var(--box-margin);
+    }
+    .about{
+        margin: auto;
+        margin-top: 120px;
+        padding: 0px;
+        max-width: 690px;
+    }
+    .amys-image{
+        width: 364px;
+        height: auto;
+        margin-left: -100px;
+    }
+    .about-text{
+        width: 339px;
+        margin-left: 70px;
+    }
+    .about-header{
+        font-size: 32px;
+        line-height: 40px;
+    }  
+    .contact{
+        justify-content: center;
+        padding-inline: 0px;
+    }
+    .carousel{
+        margin-top: 120px;
+    }
+    .contact-container{
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        padding-inline: 0;
+        width: 690px;
+        height: 352px;
+    }  
+    .contact-text{
+        width: 90%;
+    }
+    .light-header{
+        margin-top: 10px;
+        font-size: 32px;
+        line-height: 40px;
+    }
+    .header{
+        justify-content: space-between;
+        padding-inline: 0px;
+        margin: auto;
+        width: 690px;
+    }
+  
+}
+@media only screen and (max-width: 730px) {
+    :root{
+        --box-margin: 25px;
+        --box-big-width: 343px;
+        --box-small-width: 159px;
+        --box-small-height: 182px;
+        --box-wide-height: 158px;
+        --outer-padding: 1%;
+    }
+    h1{
+        font-size: 36px;
+        line-height: 45px;
+    }
+    .landing-text{
+        width: 343px;
+    }
+    .services{
+        margin: auto;
+        flex-direction: column;
+        max-width: 343px;
+    }
+    .graphic-design{
+        margin-bottom: var(--box-margin);
+    }
+    .last-boxes{
+        flex-direction: column;
+    }
+    .about{
+        flex-direction: column;
+        margin-top: 100px;
+        max-width: 343px;
+    }
+    .amys-image{
+        width: 300px;
+        height: auto;
+        margin-left: 0px;
+    }
+    .about-text{
+        text-align: center;
+        align-items: center;
+        width: 343px;
+        margin-left: 0px;
+    }
+    .about-header{
+        font-size: 26px;
+        line-height: 33px;
+    }  
+    .images-container{
+        --slider-index: 0;
+        display: flex;
+        margin-block: 30px;
+        transform: translateX(calc(var(--slider-index)*-100%)); 
+        transition: transform 0.4s ease-out;   
+    }
+    .carousel-tex{
+        font-size: 24px;
+    }
+    .images-container > img{
+        padding: 7.5px;
+        width: 270px;
+        height: auto;
+        border-radius: 10px;
+    }
+    .carousel{
+        margin-top: 100px;
+    }
+    .contact-container{
+        width: 343px;
+        height: 352px;
+    }  
+    .contact-text{
+        width: 90%;
+    }
+    .light-header{
+        font-size: 26px;
+        line-height: 33px;
+    }
+    .header{
+        justify-content: space-between;
+        padding-inline: 0px;
+        margin: auto;
+        width: 343px;
+    }
+  
+}
+  
+
+
